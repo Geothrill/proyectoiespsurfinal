@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<!-- incluye el set de caracteres, favicon, título de la web y scripts de jquery y bootstrap 4 junto con scripts varios de funcionamiento -->
+    <head>
+
+        <meta charset="utf-8">
+        <link rel="icon" href="../image/favicon.png" type="image/png">
+        <title>El mejor descanso</title>
+        <!-- JQUERY-->
+       <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+       <!-- Bootstrap CDN-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- estilos de la plantilla-->
+<link rel="stylesheet" href="../css/style.css">
+<!-- JS-->
+<script src="../script/js/habitaciones.js"></script>
+<script src="../script/js/modalReserva.js"></script>
+<script src="../script/js/logout.js"></script>
+</head>
+<body>
+   <!-- header-->
+        <header class="header_area">
+            <div class="container">
+                <!-- barra de navegación, coloca los elementos en horizontal con fondo blanco-->
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <!-- Logo de la web, se muestra a la izquierda, haciendo click redirige a la pag principal de usuarios -->
+                     <a class="navbar-brand logo_h" href="principal.html"><img src="../image/Logo.png" alt=""></a>
+                        <!-- Barra de navegación, coloca los elementos en orden de aparición de izquierda a derecha, siendo el primero el situado más a la izquierda
+                        y el último situado más a la derecha -->
+                        <ul class="nav navbar-nav menu_nav ml-auto">
+                         <li class="nav-item"><a class="nav-link" href="reservar.html">Realizar reserva</a></li>
+                    <li class="nav-item"><a class="nav-link" href="verReservas.html">Mis reservas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html" id="logout">Desconectar</a></li>
+                        </ul>
+                </nav>
+            </div>
+        </header>
+
+
+<!-- Sección donde se incluye todo lo relativo a realizar una reserva, con fondo blanco y con título que está espaciado entre el header y el footer -->
+    <section class="accomodation_area section_gap ">
+      <div class="container-fluid d-flex flex-column">
+        <div class="row ">
+          <div class="section_title  col-lg-12 mx-auto text-center">
+            <h2 class="title_color">Reservas</h2>
+            <br>
+          </div>
+<!-- Buscador de habitaciones, se trata de una columna con la misma altura que el resto de elementos dentro de "row", incluye un formulario de campos obligatorios que una vez se envía "pinta" 
+los resultados en el elemento a su derecha -->
+          <div class="col-3 float-left mx-auto bg-light text-center border border-info rounded align-self-start">
+            <h4>Búsqueda</h4>
+            <br>
+            <b>Precio</b>
+            <div class=" align-items-start">
+              <br>
+              <div class="col-6 float-left">
+                <!-- formulario a rellenar para el mostrado de datos, siendo todos los campos obligatorios -->
+                <form id="busqueda">
+                  <input type="number" name="precioBajo" placeholder="Desde" onfocus="this.placeholder = ''"  class="single-input" id="precio1" required>
+                </div>
+                <div class=" col-6 float-right">
+                  <input type="number" name="precioAlto" placeholder="Hasta" onfocus="this.placeholder = ''"   class="single-input" id="precio2" required>
+                </div>
+                <br>
+                <br>
+              </div>
+              <br>
+
+              <b>Ocupantes</b>
+              <select id="ocupantes" >
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+
+              </select>
+
+              <div class="mt-10 col-lg-12 mx-auto">
+                <br>
+                <b>Fecha</b>
+                <br>
+                <div class=" col-lg-12 mx-auto ">
+                 <p>Desde  <input type="date" name="fechaEntrada" placeholder="Repetir Contraseña" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Repetir Contraseña'"  class="single-input" id="fechaEntrada"></p>
+               </div>
+
+
+
+               <br>
+
+               <div class=" col-lg-12 mx-auto ">
+                 <p>Hasta <input type="date" name="fechaSalida" placeholder="Repetir Contraseña" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Repetir Contraseña'"  class="single-input" id="fechaSalida">
+                 </p>
+               </div>
+
+
+
+
+               <br>
+
+               <div class=" col-lg-11 mx-auto">
+                <h6><button class="btn theme_btn button_hover" type="submit" id="submit">Buscar</button></h6>
+              </div>
+
+            </div>
+          </form>
+        </div>
+        <!-- campo en el que se muestran los resultados de la búsqueda, siendo el primer div uno general y los internos una referencia para
+        detectar si la búsqueda no es correcta o no devuelve datos, o bien la respuesta con todos los datos  -->
+        <div class="col-lg-8 float-right mx-auto text-center" >
+          <div id="mostrarError"></div>
+          <div id="inputData"></div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+   <!-- footer de la web-->
+      <footer class="footer-area">
+        <div class="col-lg-6  col-md-6 col-sm-6 mx-auto">
+                        
+                            <h6 class="footer_title">Sobre nosotros</h6>
+                            <p>La percepción del mundo ha cambiado: ya no se desea leer un folleto de información, sino poder visualizar la información de forma rápida. Para nosotros, eso es
+                            una prioridad. </p>
+                    </div>
+        </footer>
+
+<!-- Modal que se invoca desde JS, sirve como contenedor para realizar reservas-->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="modalReservaLabel" aria-hidden="true">
+  <div class="modal-dialog  modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Confirmar reserva</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div id="datosHabitacion">
+        </div>
+         <b>Tipo de pensión </b>
+         <select id="pension">
+         </select>
+         <div id="costeReserva"></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary" id="finReserva" >Reservar y finalizar</button> 
+        <button type="button" class="btn btn-primary" id="seguirReserva" data-dismiss="modal">Añadir a reserva</button>
+      </div>
+    </div>
+  </div>
+</div>
+                
+            </body>
+            </html>

@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<!-- incluye el set de caracteres, favicon, título de la web y scripts de jquery y bootstrap 4 junto con scripts varios de funcionamiento -->
+    <head>
+
+        <meta charset="utf-8">
+        <link rel="icon" href="image/favicon.png" type="image/png">
+        <title>El mejor descanso</title>
+        <!-- JQUERY-->
+       <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+       <!-- Bootstrap CDN-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- estilos de la plantilla-->
+    <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/responsive.css">
+    
+</head>
+<body>
+    <!-- header-->
+        <header class="header_area">
+            <div class="container">
+                <!-- barra de navegación, coloca los elementos en horizontal con fondo blanco-->
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <!-- Logo de la web, se muestra a la izquierda, haciendo click redirige a la pag principal de usuarios -->
+                     <a class="navbar-brand logo_h" href="principal.html"><img src="image/Logo.png" alt=""></a>
+                        <!-- Barra de navegación, coloca los elementos en orden de aparición de izquierda a derecha, siendo el primero el situado más a la izquierda
+                        y el último situado más a la derecha -->
+                <ul class="nav navbar-nav menu_nav ml-auto">
+
+                    <li class="nav-item"><a class="nav-link" href="src/register.html">Registrarse</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="src/login.html">Iniciar sesión</a></li>
+            </ul>
+        </div> 
+    </nav>
+</div>
+</header>
+<!-- Sección de entrada, incluye una imagen bajo fondo azul, incluye una sección en fondo blanco translúcido con texto y botones-->
+<section class="banner_area">
+    <div class="booking_table d_flex align-items-center">
+     <div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
+     <div class="container">
+         <div class="banner_content text-center">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+
+                    <blockquote class="generic-blockquote">
+                        <h2>Es hora de respirar</h2>
+                        <h5>Nosotros nos encargamos de ofrecerte las mejores vistas  <br>  con un servicio impecable  y al mejor precio. </h5>
+                        
+                    <div class="mt-10">
+                        <h6><a href="./src/register.html" class="btn theme_btn button_hover">Regístrate</a> o <a href="./src/login.html"> inicia sesión</a></h6>
+                    </div>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+        </section>
+
+
+<!-- sección donde se incluye información de varias habitaciones, todas con texto abajo centrado y con letra tamaño h4 negrita -->
+        <section class="accomodation_area section_gap">
+            <div class="container">
+                <div class="section_title text-center">
+                    <h2>Nuestras habitaciones</h2>
+                    <p>Deléitese con nuestras habitaciones, disponibles de los siguientes tipos: </p>
+                </div>
+                <div class="row mb_30">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="accomodation_item text-center">
+                                <img src="image/room2.jpg" alt="">
+                           <h4 class="sec_h4">Habitaciones individuales</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="accomodation_item text-center">
+                                <img src="image/room1.jpg" alt="">
+                           <h4 class="sec_h4">Habitaciones de matrimonio</h4>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="accomodation_item text-center">
+                          
+                                <img src="image/room3.jpg" alt="">
+                               <h4 class="sec_h4">Suite nupcial</h4>
+                           
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="accomodation_item text-center">
+                                <img src="image/room4.jpg" alt="">
+                            <h4 class="sec_h4">Familiar</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-- Sección con foto de fondo y por encima fondo azul, tiene un contenedor central con 6 elementos que son cuadros referenciando diferentes servicios del hotel -->
+        <section class="facilities_area section_gap">
+            <div class="overlay bg-parallax" data-stellar-ratio="0.8" data-stellar-vertical-offset="0" data-background="">  
+            </div>
+            <div class="container">
+                <div class="section_title text-center">
+                    <h2 >Servicios Royal</h2>
+                    <p>Reservando en nuestro hotel podrá disfrutar de nuestros servicios</p>
+                </div>
+                <div class="row mb_30">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="facilities_item">
+                            <h4 class="sec_h4">Restaurante</h4>
+                            <p>Disponemos de una amplia selección de platos para su elección. Sin duda quedará encantado.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="facilities_item">
+                            <h4 class="sec_h4">Wi-fi</h4>
+                            <p>Todas nuestras habitaciones disponen de conexión a internet de forma gratuita.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="facilities_item">
+                            <h4 class="sec_h4">Piscina</h4>
+                            <p>Dos piscinas completamente climatizadas tanto para mayores como para pequeños.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="facilities_item">
+                            <h4 class="sec_h4">Alquiler de coches</h4>
+                            <p>Podrá elegir dentro de una amplia gama de vehículos para alquiler.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="facilities_item">
+                            <h4 class="sec_h4">Gimnasio</h4>
+                            <p>Completamente equipado: para aquellos amantes del deporte. </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="facilities_item">
+                            <h4 class="sec_h4">Guía</h4>
+                            <p>Servicio de guías para que descubra cada rincón de la ciudad.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Sección explicativa del hotel, alinea los objetos según su tamaño para que no se descuadren, fondo blanco -->
+        <section class="about_history_area section_gap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 d_flex align-items-center">
+                        <div class="about_content ">
+                            <h2 class="title title_color">Sobre nosotros</h2>
+                            <p><b>Descanso Royal</b> nació de un sueño: un gran hotel a buen precio  que pudiera ofrecer un servicio excelente al mayor público posible. Con más de 20 años de experiencia en el sector, sin duda 
+                            nos hemos convertido en referentes para la industria hotelera sevillana.</p>
+                            <p>Nuestros trabajadores están disponibles durante todo el día para brindarte información sobre nosotros y nuestros servicios, así como para responder a tus preguntas, realizar reservas y atender tus solicitudes.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <img class="img-fluid" src="image/about_bg.jpg" alt="img">
+                    </div>
+                </div>
+
+            </div>
+            <br>
+            <br>
+            <!--botón al final de la sección para volver al inicio de la página, sombrea el color al ponerse encima -->
+            <div class="container ">
+               <div class="row ">
+                <div class="col-md-2 mx-auto">
+                   <a href="#" class="btn theme_btn button_hover">Ir arriba</a>
+               </div> 
+           </div> 
+       </div>
+
+           </section>
+
+         <!-- footer de la web-->
+      <footer class="footer-area">
+        <div class="col-lg-6  col-md-6 col-sm-6 mx-auto">
+                        
+                            <h6 class="footer_title">Sobre nosotros</h6>
+                            <p>La percepción del mundo ha cambiado: ya no se desea leer un folleto de información, sino poder visualizar la información de forma rápida. Para nosotros, eso es
+                            una prioridad. </p>
+                    </div>
+        </footer>
+               
+            </body>
+            </html>

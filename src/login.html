@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<!-- incluye el set de caracteres, favicon, título de la web y scripts de jquery y bootstrap 4 junto con scripts varios de funcionamiento -->
+    <head>
+
+        <meta charset="utf-8">
+        <link rel="icon" href="../image/favicon.png" type="image/png">
+        <title>El mejor descanso</title>
+        <!-- JQUERY-->
+       <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+       <!-- Bootstrap CDN-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- estilos de la plantilla-->
+    <link rel="stylesheet" href="../css/style.css">
+     <link rel="stylesheet" href="../css/responsive.css">
+     <!-- JS-->
+<script src="../script/js/login.js"></script>
+
+</head>
+<body>
+   <!-- header-->
+        <header class="header_area">
+            <div class="container">
+                <!-- barra de navegación, coloca los elementos en horizontal con fondo blanco-->
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <!-- Logo de la web, se muestra a la izquierda, haciendo click redirige a la pag principal de usuarios -->
+                     <a class="navbar-brand logo_h" href="principal.html"><img src="../image/Logo.png" alt=""></a>
+                        <!-- Barra de navegación, coloca los elementos en orden de aparición de izquierda a derecha, siendo el primero el situado más a la izquierda
+                        y el último situado más a la derecha -->
+                <ul class="nav navbar-nav menu_nav ml-auto">
+
+                    <li class="nav-item"><a class="nav-link" href="register.html">Registrarse</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="login.html">Iniciar sesión</a></li>
+            </ul>
+            </nav>
+        </div> 
+    
+</header>
+<!-- Sección de entrada, incluye una imagen bajo fondo azul, incluye una sección en fondo blanco translúcido y un formulario de login al aplicativo-->
+<section class="banner_area">
+    <div class="booking_table d_flex align-items-center">
+     <div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
+     <div class="container">
+         <div class="banner_content text-center">
+            <div class="row">
+               <div class="col-lg-6 mx-auto">
+                 <br>
+                    <blockquote class="generic-blockquote">
+
+                        <h2>Inicia sesión</h2>
+
+                        <form id="formulario">
+
+                        <div class="mt-10 col-lg-8 mx-auto">
+
+                             <input type="email" name="email" placeholder="Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email'" required class="single-input" id="email">
+                        </div>
+                        <div class="mt-10 col-lg-8 mx-auto">
+                         <input type="password" name="password" placeholder="Contraseña" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Contraseña'" required class="single-input" id="password">
+                     </div>
+
+                    <br>
+                    <div class="mt-10">
+                        <h6><button class="btn theme_btn button_hover" type="submit" id="submit">Acceder</button> ¿No eres miembro? <a href="register.html"> Únete ahora</a></h6>
+                    </div>
+                </form>
+                <div class="mt-10" id="respuesta">
+                    
+                </div>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+        <!-- footer de la web-->
+      <footer class="footer-area">
+        <div class="col-lg-6  col-md-6 col-sm-6 mx-auto">
+                        
+                            <h6 class="footer_title">Sobre nosotros</h6>
+                            <p>La percepción del mundo ha cambiado: ya no se desea leer un folleto de información, sino poder visualizar la información de forma rápida. Para nosotros, eso es
+                            una prioridad. </p>
+                    </div>
+        </footer>
+
+            </body>
+            </html>
